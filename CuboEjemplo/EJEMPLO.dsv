@@ -1,0 +1,165 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="e71daefb-f039-4796-a058-1be180d50e53" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>EJEMPLO</ID>
+  <Name>EJEMPLO</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:NameMatchingCriteria</Name>
+      <Value>1</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>EJEMPLO</DataSourceID>
+  <Schema>
+    <xs:schema id="EJEMPLO" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="EJEMPLO" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="e5ea86cc-e050-4bcc-a0a9-91d8c9ede8e6">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_Perfil" msprop:design-time-name="3a65c82e-da45-42b8-a23b-126de7b8eb0c" msprop:DbTableName="Perfil" msprop:FriendlyName="Perfil" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_perfil" msprop:design-time-name="8e5cd6aa-697f-45ea-be0c-60ef29ff687e" msprop:DbColumnName="id_perfil" msprop:FriendlyName="id_perfil" type="xs:int" />
+                  <xs:element name="Perfil" msprop:design-time-name="1523ab19-0b14-4f96-8725-28fcb4f628c0" msprop:DbColumnName="Perfil" msprop:FriendlyName="Perfil" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="estatus" msprop:design-time-name="06763c0d-40a3-428e-8726-f29c26020f55" msprop:DbColumnName="estatus" msprop:FriendlyName="estatus" type="xs:int" minOccurs="0" />
+                  <xs:element name="id_rol" msprop:design-time-name="e46f5671-1a39-4f10-a256-4517707758a0" msprop:DbColumnName="id_rol" msprop:FriendlyName="id_rol" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Rol" msprop:design-time-name="82826ce7-21bc-4ba2-9b12-5671a2947e18" msprop:DbTableName="Rol" msprop:FriendlyName="Rol" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_rol" msprop:design-time-name="c6a36be4-a7f7-479e-8bf3-043bcb4e7725" msprop:DbColumnName="id_rol" msprop:FriendlyName="id_rol" type="xs:int" />
+                  <xs:element name="rol" msprop:design-time-name="acd67ccf-d9d4-4476-8228-396e78dd7233" msprop:DbColumnName="rol" msprop:FriendlyName="rol" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="estatus" msprop:design-time-name="68a8af15-cae5-4fe6-a7d9-d2373ed74404" msprop:DbColumnName="estatus" msprop:FriendlyName="estatus" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Solicitud" msprop:design-time-name="638cdc72-922e-4be3-86b1-af99109ce4b0" msprop:DbTableName="Solicitud" msprop:FriendlyName="Solicitud" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_solicitud" msprop:design-time-name="62c1e98a-c507-4603-9ef9-6763c94a663c" msprop:DbColumnName="id_solicitud" msprop:FriendlyName="id_solicitud" type="xs:int" />
+                  <xs:element name="id_usuario" msprop:design-time-name="d80b37f9-854b-4307-9d7f-b49d18b02ea5" msprop:DbColumnName="id_usuario" msprop:FriendlyName="id_usuario" type="xs:int" minOccurs="0" />
+                  <xs:element name="estatus" msprop:design-time-name="ada8e581-b4a0-4037-92ab-1c1d7c59464e" msprop:DbColumnName="estatus" msprop:FriendlyName="estatus" type="xs:int" minOccurs="0" />
+                  <xs:element name="id_tarea" msprop:design-time-name="671ad8df-ea60-4713-921b-fd6b3c4b3934" msprop:DbColumnName="id_tarea" msprop:FriendlyName="id_tarea" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Tareas" msprop:design-time-name="cfac353d-b6bc-4ac7-ab9b-d9384b4b6e11" msprop:DbTableName="Tareas" msprop:FriendlyName="Tareas" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_tarea" msprop:design-time-name="4df8e4fe-8aac-48f9-9b8b-d7e0ab492325" msprop:DbColumnName="id_tarea" msprop:FriendlyName="id_tarea" type="xs:int" />
+                  <xs:element name="tarea" msprop:design-time-name="f265c45a-7189-4ee3-a9ae-f9b09740a996" msprop:DbColumnName="tarea" msprop:FriendlyName="tarea" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="estatus" msprop:design-time-name="c8e93877-3a17-459c-b80c-86d8da4d69fa" msprop:DbColumnName="estatus" msprop:FriendlyName="estatus" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Usuarios" msprop:design-time-name="af10e66c-ebd1-43dd-b2e0-3da6e4a4f751" msprop:DbTableName="Usuarios" msprop:FriendlyName="Usuarios" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_usuario" msprop:design-time-name="0dbedf1f-d42e-4c99-ad86-6ad579e7002d" msprop:DbColumnName="id_usuario" msprop:FriendlyName="id_usuario" type="xs:int" />
+                  <xs:element name="nombre" msprop:design-time-name="9ccb37dc-b31d-40c0-855c-8bbb93b479ed" msprop:DbColumnName="nombre" msprop:FriendlyName="nombre" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="apellido_pat" msprop:design-time-name="a5d1f887-57c4-4208-9271-3f3214bd1902" msprop:DbColumnName="apellido_pat" msprop:FriendlyName="apellido_pat" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="estatus" msprop:design-time-name="beba88e1-d2d1-4dcf-80ea-2fe86dcb47e6" msprop:DbColumnName="estatus" msprop:FriendlyName="estatus" type="xs:int" minOccurs="0" />
+                  <xs:element name="id_perfil" msprop:design-time-name="be99be6e-cfe5-4e6e-a032-77623a81e590" msprop:DbColumnName="id_perfil" msprop:FriendlyName="id_perfil" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Perfil" />
+          <xs:field xpath="id_perfil" />
+        </xs:unique>
+        <xs:unique name="dbo_Rol_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Rol" />
+          <xs:field xpath="id_rol" />
+        </xs:unique>
+        <xs:unique name="dbo_Solicitud_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Solicitud" />
+          <xs:field xpath="id_solicitud" />
+        </xs:unique>
+        <xs:unique name="dbo_Tareas_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Tareas" />
+          <xs:field xpath="id_tarea" />
+        </xs:unique>
+        <xs:unique name="dbo_Usuarios_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Usuarios" />
+          <xs:field xpath="id_usuario" />
+        </xs:unique>
+      </xs:element>
+      <xs:annotation>
+        <xs:appinfo>
+          <msdata:Relationship name="Perfil-Rol" msdata:parent="dbo_Rol" msdata:child="dbo_Perfil" msdata:parentkey="id_rol" msdata:childkey="id_rol" />
+          <msdata:Relationship name="Solicitud-Usuarios" msdata:parent="dbo_Usuarios" msdata:child="dbo_Solicitud" msdata:parentkey="id_usuario" msdata:childkey="id_usuario" />
+          <msdata:Relationship name="Solicitud-Tareas" msdata:parent="dbo_Tareas" msdata:child="dbo_Solicitud" msdata:parentkey="id_tarea" msdata:childkey="id_tarea" />
+          <msdata:Relationship name="Usuarios-Perfil" msdata:parent="dbo_Perfil" msdata:child="dbo_Usuarios" msdata:parentkey="id_perfil" msdata:childkey="id_perfil" />
+        </xs:appinfo>
+      </xs:annotation>
+    </xs:schema>
+    <EJEMPLO xmlns="" />
+  </Schema>
+</DataSourceView>
